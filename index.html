@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Mohsine El Boussakne - Data Science, Big Data and Machine Learning Portfolio">
+
+    <title>Mohsine El Boussakne | Data & IT Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get("status");
+    const message = document.getElementById("form-message");
+
+    if (message) {
+        if (status === "success") {
+            message.textContent = "Message sent successfully! Thank you for contacting me.";
+            message.classList.add("success");
+        } else if (status === "error") {
+            message.textContent = "Sorry, your message could not be sent. Please try again later.";
+            message.classList.add("error");
+        } else if (status === "invalid") {
+            message.textContent = "Please check your form information and try again.";
+            message.classList.add("error");
+        }
+
+        if (status) {
+            message.style.display = "block";
+            window.history.replaceState({}, document.title, window.location.pathname + "#contact");
+        }
+    }
+</script>
+
+<body>
+
+    
+<!-- Navbar -->
+<header class="header">
+    <nav class="navbar">
+
+        <a href="#home" class="logo">ME<span>.</span></a>
+
+        <ul class="nav-links" id="main-navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="mobile-cv">
+                <a href="assets/cv-mohssine.pdf" download>
+                    Download CV
+                </a>
+            </li>
+        </ul>
+
+        <a href="assets/cv-mohssine.pdf" class="nav-cv" download>
+            Download CV
+        </a>
+
+        <button
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+</header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        
+<section id="home" class="hero">
+
+    <div class="hero-container">
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+
+            <span class="hero-subtitle">
+                <span class="status-dot"></span>
+                Welcome to my portfolio
+            </span>
+
+            <h1>
+                Hi, I'm <span>Mohsine</span>
+                <br>
+                Data & IT Enthusiast
+            </h1>
+
+            <p class="hero-description">
+                Passionate about Data Science, Machine Learning,
+                Big Data and Business Intelligence.
+                I enjoy transforming data into meaningful insights
+                and intelligent solutions.
+            </p>
+
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+
+                <a href="assets/cv-mohssine.pdf" class="btn btn-primary" download>
+                    Download CV
+                    <span>↓</span>
+                </a>
+
+                <a href="#projects" class="btn btn-outline">
+                    Explore Projects
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+
+                <a href="mailto:elboussaknemohsine@gmail.com">
+                    Email
+                </a>
+
+                <a href="http://www.linkedin.com/in/mohsine-el-boussakni" target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image">
+
+            <div class="image-glow"></div>
+
+            <div class="image-wrapper">
+                <img
+                    src="assets/images/profile.jpeg"
+                    alt="Mohsine El Boussakne"
+                    loading="eager"
+                >
+            </div>
+
+            <div class="floating-card">
+                <span>✦</span>
+                Data Science & ML
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-decoration"></div>
+
+</section>
+
+
+        <!-- About Section -->
+       
+<!-- About Section -->
+<section id="about" class="about">
+
+    <div class="section-container">
+
+        <!-- Section Heading -->
+        <div class="section-heading">
+            <span class="section-label">GET TO KNOW ME</span>
+            <h2>About <span>Me</span></h2>
+            <p>A little more about my background and interests.</p>
+        </div>
+
+        <div class="about-container">
+
+            <!-- About Text -->
+            <div class="about-content">
+
+                <h3>Turning Data Into Meaningful Insights</h3>
+
+                <p>
+                    I am Mohsine El Boussakne, a graduate in
+                    information Support and Statistics from the
+                    Higher School of Technology of Fkih Ben Salah.
+                </p>
+
+                <p>
+                    I am passionate about Data Science, Machine
+                    Learning, Big Data and Business Intelligence.
+                    I enjoy exploring datasets, discovering patterns
+                    and building solutions that support better
+                    decision-making.
+                </p>
+
+                <p>
+                    I am always motivated to learn new technologies,
+                    improve my technical skills and take on new
+                    challenges in the field of data.
+                </p>
+
+            </div>
+
+            <!-- About Highlights -->
+            <div class="about-highlights">
+
+                <div class="highlight-card">
+                    <span class="highlight-icon">⌘</span>
+                    <h4>Data Science</h4>
+                    <p>Exploring data and extracting useful insights.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <span class="highlight-icon">◈</span>
+                    <h4>Machine Learning</h4>
+                    <p>Discovering patterns through intelligent models.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <span class="highlight-icon">▤</span>
+                    <h4>Business Intelligence</h4>
+                    <p>Transforming data into meaningful reports.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <span class="highlight-icon">✦</span>
+                    <h4>Continuous Learning</h4>
+                    <p>Always exploring and improving my skills.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Skills Section -->
+        
+<!-- Skills Section -->
+<section id="skills" class="skills">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span class="section-label">MY EXPERTISE</span>
+            <h2>Technical <span>Skills</span></h2>
+            <p>Technologies and tools I have worked with during my academic journey.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Programming -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <span class="skill-icon">⌨</span>
+                    <h3>Programming Languages</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>R</span>
+                    <span>SQL</span>
+                    <span>PL/SQL</span>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <span class="skill-icon">▤</span>
+                    <h3>Databases</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>MongoDB</span>
+                    <span>Redis</span>
+                    <span>Cassandra</span>
+                    <span>Oracle</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+
+            <!-- Big Data -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <span class="skill-icon">◈</span>
+                    <h3>Big Data Technologies</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>HDFS</span>
+                    <span>Hive</span>
+                    <span>MapReduce</span>
+                    <span>YARN</span>
+                    <span>Apache Spark</span>
+                </div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <span class="skill-icon">◉</span>
+                    <h3>Data Science & Machine Learning</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>K-Means</span>
+                    <span>TF-IDF</span>
+                    <span>Apriori</span>
+                </div>
+            </div>
+
+            <!-- ETL & BI -->
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <span class="skill-icon">▦</span>
+                    <h3>ETL & Business Intelligence</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>KNIME</span>
+                    <span>Talend</span>
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Experience Section -->
+        
+<section id="experience" class="experience">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span class="section-label">MY JOURNEY</span>
+            <h2>Professional <span>Experience</span></h2>
+            <p>My internships and practical experience in technology.</p>
+        </div>
+
+        <div class="experience-timeline">
+
+            <!-- OCP Internship -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <div class="experience-meta">
+                        <span class="experience-date">Apr – Jun 2026</span>
+                        <span class="experience-type">Final Year Internship</span>
+                    </div>
+
+                    <h3>Full-Stack Developer & Automation</h3>
+
+                    <h4>OCP Groupe — Jorf Lasfar</h4>
+
+                    <p>
+                        Developed an automated order tracking and management
+                        solution using n8n and Python. The system processes
+                        PDF attachments received by email, extracts relevant
+                        data, compares it with Excel reference files and
+                        displays the results through a Flask dashboard.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>n8n</span>
+                        <span>Pandas</span>
+                        <span>Plotly</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- INOVAFRIQUE Internship -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <div class="experience-meta">
+                        <span class="experience-date">2024</span>
+                        <span class="experience-type">First Year Internship</span>
+                    </div>
+
+                    <h3>Web Developer Intern</h3>
+
+                    <h4>INOVAFRIQUE</h4>
+
+                    <p>
+                        Developed a Minimum Viable Product (MVP) for a leave
+                        request management application. The solution included
+                        a Flask backend, a web interface for submitting and
+                        tracking requests, and an administration area for
+                        approving or rejecting requests.
+                    </p>
+
+                    <div class="experience-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JSON</span>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Projects Section -->
+        
+<!-- Projects Section -->
+<section id="projects" class="projects">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span class="section-label">MY WORK</span>
+            <h2>Academic <span>Projects</span></h2>
+            <p>Selected projects showcasing my skills in data and technology.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Featured PFE Project -->
+            <article class="project-card featured-project">
+
+                <div class="project-top">
+                    <span class="project-number">01 / FEATURED PROJECT</span>
+                    <span class="project-category">Machine Learning</span>
+                </div>
+
+                <div class="project-icon">◈</div>
+
+                <h3>IT Job Market & Skills Analysis</h3>
+
+                <p>
+                    An analysis of more than 785,000 IT job offers to
+                    identify in-demand skills and employment trends.
+                    Applied NLP, TF-IDF, K-Means clustering and
+                    Apriori association rules, with an interactive
+                    dashboard developed using Flask.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>TF-IDF</span>
+                    <span>K-Means</span>
+                    <span>Apriori</span>
+                    <span>Flask</span>
+                </div>
+
+                <div class="project-footer">
+                    <span>Final Year Project</span>
+                    <span>2026</span>
+                </div>
+
+            </article>
+
+            <!-- Stock Management -->
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">02</span>
+                    <span class="project-category">Business Intelligence</span>
+                </div>
+
+                <div class="project-icon">▦</div>
+
+                <h3>Stock Management System</h3>
+
+                <p>
+                    Designed an ETL workflow with KNIME to centralize
+                    stock data, store it in a PostgreSQL Data Warehouse
+                    and visualize key performance indicators using
+                    Power BI.
+                </p>
+
+                <div class="project-tags">
+                    <span>KNIME</span>
+                    <span>PostgreSQL</span>
+                    <span>Power BI</span>
+                    <span>ETL</span>
+                </div>
+
+                <div class="project-footer">
+                    <span>Data Engineering</span>
+                </div>
+
+            </article>
+
+            <!-- Customer Segmentation -->
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">03</span>
+                    <span class="project-category">Machine Learning</span>
+                </div>
+
+                <div class="project-icon">◉</div>
+
+                <h3>Customer Segmentation</h3>
+
+                <p>
+                    Applied the K-Means clustering algorithm to sales
+                    data to segment customers according to their
+                    purchasing behavior and identify useful business
+                    insights.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>K-Means</span>
+                </div>
+
+                <div class="project-footer">
+                    <span>Data Analysis</span>
+                </div>
+
+            </article>
+
+            <!-- R Statistical Analysis -->
+            <article class="project-card">
+
+                <div class="project-top">
+                    <span class="project-number">04</span>
+                    <span class="project-category">Statistics</span>
+                </div>
+
+                <div class="project-icon">∑</div>
+
+                <h3>Statistical Data Analysis</h3>
+
+                <p>
+                    Performed exploratory statistical analysis using R,
+                    calculating global indicators and examining
+                    correlations between variables to identify
+                    patterns and trends.
+                </p>
+
+                <div class="project-tags">
+                    <span>R</span>
+                    <span>Statistics</span>
+                    <span>Correlation Analysis</span>
+                </div>
+
+                <div class="project-footer">
+                    <span>Data Analytics</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Education Section -->
+        
+<section id="education" class="education">
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span class="section-label">MY BACKGROUND</span>
+            <h2>Education</h2>
+            <p>My academic journey and qualifications.</p>
+        </div>
+
+        <div class="education-grid">
+
+            <!-- DUT -->
+            <article class="education-card">
+                <div class="education-icon">🎓</div>
+
+                <span class="education-date">2024 — 2026</span>
+
+                <h3>Diplôme Universitaire de Technologie (DUT)</h3>
+
+                <h4>Information Systems & Statistics</h4>
+
+                <p class="education-school">
+                    École Supérieure de Technologie — Fkih Ben Salah
+                </p>
+
+                <span class="education-status">Higher Education</span>
+            </article>
+
+            <!-- Baccalaureate -->
+            <article class="education-card">
+                <div class="education-icon">📘</div>
+
+                <span class="education-date">2023 — 2024</span>
+
+                <h3>Baccalaureate</h3>
+
+                <h4>Physical Sciences</h4>
+
+                <p class="education-school">
+                    Lycée Doukkala — Sidi Bennour
+                </p>
+
+                <span class="education-status">Mention: Assez Bien</span>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+       
+<!-- Contact Section -->
+<section id="contact" class="contact">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>Let's <span>Connect</span></h2>
+            <p>Have an opportunity or a project in mind? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h3>Let's start a conversation</h3>
+
+                <p>
+                    I am open to internship opportunities, collaborations
+                    and professional connections in Data Science,
+                    Machine Learning and Business Intelligence.
+                </p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:elboussaknemohsine@gmail.com">
+                            elboussaknemohsine@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">☎</div>
+                    <div>
+                        <span>Phone</span>
+                        <a href="tel:+212642465349">
+                            +212 642 46 53 49
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">⌖</div>
+                    <div>
+                        <span>Location</span>
+                        <p>Sidi Bennour, Morocco</p>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="mailto:elboussaknemohsine@gmail.com">Email</a>
+                    
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+<p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+                <form class="contact-form" id="contact-form"
+      action="send-message.php"
+      method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">
+    Send Message
+    <span class="arrow">↗</span>
+</button>
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    
+<footer class="footer">
+
+    <div class="section-container">
+
+        <div class="footer-content">
+
+            <a href="#home" class="footer-logo">
+                ME<span>.</span>
+            </a>
+
+            <p>
+                Turning data into meaningful insights.
+            </p>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Mohsine El Boussakne. All rights reserved.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
